@@ -1,13 +1,20 @@
 // Business Logic
 
 function counter(userInput) {
-  var numberArray = new Array(userInput);
+  if (userInput > 0) {
+    var numberArray = new Array(userInput);
+    var outputArray = [];
 
-  for (var i = 0; i < numberArray.length; i ++) {
-    alert((i+1));
+    for (var i = 0; i < numberArray.length; i ++) {
+      outputArray.push(i+1);
+    }
+
+    return outputArray;
+  } else {
+      return "You must enter a positive number";
   }
-  if ()
-}
+
+  }
 
 // UI Logic
 
@@ -16,8 +23,6 @@ $(function() {
     event.preventDefault();
 
     var userInput = parseInt($("input#number-input").val());
-
-    console.log(userInput);
 
     var result = counter(userInput);
 
