@@ -11,17 +11,16 @@
   <body>
     <div class="container">
       <div class="jumbotron">
-        <h1>Ping-Pong</h1>
-        <p>Enter a number below and the computer will count to that number with some additional fun thrown in</p>
       </div>
-      <form id="number-submit">
+      <p id="instructions">Enter a number below... can you guess the counting rule?</p>
+      <form class="form-inline" id="number-submit">
         <div class="form-group">
-            <label for="number-input">Enter a positive number:</label>
-            <input id="number-input" type="text">
+          <label for="number-input">Enter a positive number:</label>
+          <input id="number-input" type="text">
+          <button class="btn btn-primary btn-xs" type="submit">Submit</button>
         </div>
-        <button type="submit" name="button">Submit</button>
       </form>
-      <span id="result"></span>
+      <div id="result"></div>
     </div>
   </body>
 </html>

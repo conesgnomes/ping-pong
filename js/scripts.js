@@ -16,7 +16,7 @@ function counter(userInput) {
         outputArray.splice(i, 1, "pong");
       }
 
-    } return outputArray;
+    } return outputArray.join(", ");
   } else {
     return "You must enter a positive number";
   }
@@ -27,7 +27,7 @@ function counter(userInput) {
 
 $(function() {
   $("#number-input").click(function() {
-    $("#result").hide();
+    $("#result").fadeOut(150);
     $("#number-input").val('');
   });
 
@@ -38,7 +38,7 @@ $(function() {
 
     var result = counter(userInput);
 
-    $("#result").text(result).show();
+    $("#result").text(result).fadeIn(400);
 
 
   });
