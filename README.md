@@ -44,7 +44,7 @@ Specifications:
 
 * _Clone the application to your desktop_
 * _Open index.html in your preferred web browser_
-* _Read and enjoy!_
+* _Answer the question and have fun!_
 
 _This requires a desktop and a web browser._
 
@@ -58,7 +58,7 @@ _Feel free to contact me on GitHub if you have any questions about this code._
 
 ## Technologies Used
 
-_I used both HTML and CSS for this application._
+_I used HTML, CSS, and JavaScript for this application._
 
 ### License
 
