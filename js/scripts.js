@@ -7,14 +7,22 @@ function counter(userInput) {
 
     for (var i = 0; i < numberArray.length; i ++) {
       outputArray.push(i+1);
-    }
 
-    return outputArray;
-  } else {
-      return "You must enter a positive number";
+      if (outputArray[i] % 15 === 0) {
+        outputArray.splice(i, 1, "ping-pong");
+      } else if (outputArray[i] % 3 === 0) {
+        outputArray.splice(i, 1, "ping");
+      } else if (outputArray[i] % 5 === 0) {
+        outputArray.splice(i, 1, "pong");
+      }
+
+    } return outputArray;
+} else {
+    return "You must enter a positive number";
   }
 
-  }
+}
+
 
 // UI Logic
 
