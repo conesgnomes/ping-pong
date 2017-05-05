@@ -32,7 +32,7 @@ Specifications:
   -Input: 5
   -Output: [.., 4, "pong"]
 
--When a number that is divisible by both 3 and 5 is reached, the program will return "ping-pong"
+-When a number that is divisible by both 15 is reached, the program will return "ping-pong"
     -Input: 16
     -Output: [.., 14, "ping-pong", 16]
 

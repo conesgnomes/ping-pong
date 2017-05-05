@@ -17,16 +17,20 @@ function counter(userInput) {
       }
 
     } return outputArray;
-} else {
+  } else {
     return "You must enter a positive number";
   }
-
-}
+};
 
 
 // UI Logic
 
 $(function() {
+  $("#number-input").click(function() {
+    $("#result").hide();
+    $("#number-input").val('');
+  });
+
   $("form#number-submit").submit(function(event) {
     event.preventDefault();
 
@@ -34,7 +38,8 @@ $(function() {
 
     var result = counter(userInput);
 
-    $("ul#result").append("<li>" + result + "</li>");
+    $("#result").text(result).show();
+
 
   });
 });
