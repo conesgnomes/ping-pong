@@ -1,13 +1,12 @@
 // Business Logic
 
 function counter(userInput) {
-  var numberArray = [];
-  var inputArray = numberArray.push(userInput);
-  for (index = 0; index < numberArray; index += 1) {
-    alert(numberArray);
-  }
+  var numberArray = new Array(userInput);
 
-  // for (index=)
+  for (var i = 0; i < numberArray.length; i ++) {
+    alert((i+1));
+  }
+  if ()
 }
 
 // UI Logic
